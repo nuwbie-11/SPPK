@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXPO IT</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/icon-font.min.css">
+    <link rel="stylesheet" href="css/style-prod.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/slick/slick.css">
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="title">
+								<h4>Product Detail</h4>
+							</div>
+							<nav aria-label="breadcrumb" role="navigation">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Product Detail</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="product-wrap">
+					<div class="product-detail-wrap mb-30">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 col-sm-12">
+								<div class="product-slider slider-arrow">
+									<div class="product-slide">
+										<img src="assets/download (1).png" alt="">
+									</div>
+									<div class="product-slide">
+										<img src="assets/download(3).webp" alt="">
+									</div>
+									<div class="product-slide">
+										<img src="assets/download.jpg" alt="">
+									</div>
+									<div class="product-slide">
+										<img src="assets/expo_stark.gif" alt="">
+									</div>
+								</div>
+								<div class="product-slider-nav">
+									<div class="product-slide-nav">
+										<img src="assets/download (1).png" alt="">
+									</div>
+									<div class="product-slide-nav">
+										<img src="assets/download(3).webp" alt="">
+									</div>
+									<div class="product-slide-nav">
+										<img src="assets/download.jpg" alt="">
+									</div>
+									<div class="product-slide-nav">
+										<img src="assets/expo_stark.gif" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 col-sm-12">
+								<div class="product-detail-desc pd-20 card-box height-100-p">
+									<h4 class="mb-20 pt-20">Prod 1</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<div class="price">
+										<ins>Type : </ins><ins>Bla Bla</ins>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<a href="#" class="btn btn-primary btn-block">Visit</a>
+										</div>
+                                        <div class="col-md-6 col-6">
+											<a href="index.html" class="btn btn-outline-primary btn-block">Home</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+    <script src="scripts/core.js"></script>
+	<script src="scripts/script.min.js"></script>
+	<script src="scripts/process.js"></script>
+	<script src="scripts/layout-settings.js"></script>
+	<!-- Slick Slider js -->
+	<script src="src/plugins/slick/slick.min.js"></script>
+	<!-- bootstrap-touchspin js -->
+	<script src="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('.product-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				infinite: true,
+				speed: 1000,
+				fade: true,
+				asNavFor: '.product-slider-nav'
+			});
+			jQuery('.product-slider-nav').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				asNavFor: '.product-slider',
+				dots: false,
+				infinite: true,
+				arrows: false,
+				speed: 1000,
+				centerMode: true,
+				focusOnSelect: true
+			});
+			$("input[name='demo3_22']").TouchSpin({
+				initval: 1
+			});
+		});
+	</script>
+</body>
+</html>

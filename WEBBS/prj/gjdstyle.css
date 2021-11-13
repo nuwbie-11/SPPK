@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navi{
+    padding: 20px 23.2%;
+    background-color: rgb(14, 14, 14,0.5);   
+}
+
+.navi .navbar{
+    height: 80px;
+}
+
+.tron{
+    height: 100vh;
+}
+
+.hero-field{
+    padding: 280px;
+    background-image: url(assets/tumblr.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background-color: rgb(0, 0, 0,0.5); */
+}
+
+.content{
+    background: black;
+}
+
+.content-text .content-field{
+    padding: 5% 150px;
+}
+
+.content-media .content-field .row{
+    padding: 2% 0px;
+}
+
+.content-media{
+    padding: 3% 0;
+}
+
+.footer{
+    background:rgb(65, 28, 28) ;
+}
